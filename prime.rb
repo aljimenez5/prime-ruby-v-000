@@ -4,6 +4,8 @@ def prime?(integer)
   lesser_integers.map {|lesser_int| divisible_by << lesser_int if integer % lesser_int == 0}
     if divisible_by.count > 2
       return false
+    elsif integer < 0 
+      return false
     else
       return true
       end
