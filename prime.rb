@@ -4,7 +4,6 @@ def prime?(integer)
     lesser_integers.map {|lesser_int| return false if integer % lesser_int == 0}
     else
       return true
-    end
   end
   false
 end
