@@ -3,7 +3,7 @@ def prime?(integer)
   divisible_by = []
   lesser_integers.map {|lesser_int| divisible_by << lesser_int if integer % lesser_int == 0}
     if divisible_by.count > 2
-        return false
+      return false
       else
         return true
       end
