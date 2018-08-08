@@ -1,6 +1,7 @@
 def prime?(integer)
-  lesser_integers = (2..integer).to_a
+  lesser_integers = (2..integer-1).to_a
   while integer > 1
+    lesser_integers.map {|integer|
     if integer % (2..integer) == 0 
       return false
     else
